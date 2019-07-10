@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fef255f5-3341-4167-adfc-52c4fcbabfe4" name="Default Changelist" comment="" />
+    <list default="true" id="fef255f5-3341-4167-adfc-52c4fcbabfe4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo@x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Main/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Main/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/api.js" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="179" />
     <option name="y" value="123" />
     <option name="width" value="1400" />
@@ -22,9 +32,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -58,7 +68,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="179" y="123" width="1400" height="1000" extended-state="0" />
+    <frame x="179" y="123" width="1400" height="1000" extended-state="1" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32966226" />
@@ -71,7 +81,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="3" side_tool="true" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.3298731" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />

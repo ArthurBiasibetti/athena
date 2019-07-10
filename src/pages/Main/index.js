@@ -2,16 +2,22 @@ import React, { Component, svg } from 'react';
 
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 
+import api from '../../services/api';
 
-
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png';
 
 import styles from './styles';
 
 export default class main extends Component {
-  handleSingIn = async () => {
-    
+  state = {
+    userEmail: '',
+    userPass: ''
   }
+
+  handleSingIn = async () => {
+    const response = await api.get('pessoas/'+this.state.userName);
+    console.log(response.data);
+}; 
 
   render() {
     return(
@@ -21,11 +27,13 @@ export default class main extends Component {
 
           <TextInput
           style={styles.input}
-          placeholder="Nome de Usuario"
+          placeholder="Email"
           placeholderTextColor="#FFF"
           autoCapitalize="none"
           autoCorrect={false}
           underlineColorAndroid="transparent"
+          value={this.state.userEmail}
+          onChangeText={text => this.setState({ userEmail: text})}
           />
            <TextInput
           style={styles.input}
@@ -34,8 +42,10 @@ export default class main extends Component {
           autoCapitalize="none"
           autoCorrect={false}
           underlineColorAndroid="transparent"
+          value={this.state.userPass}
+          onChangeText={text => this.setState({ userPass: text})}
           />
-          <TouchableOpacity onPress={() =>{}} style={styles.button}>
+          <TouchableOpacity onPress={this.handleSingIn} style={styles.button}>
             <Text style={styles.buttomText}>Logar</Text>
           </TouchableOpacity> 
         </View>
