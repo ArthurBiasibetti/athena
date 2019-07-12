@@ -1,9 +1,11 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
-import index from './pages/Main';
+import Main from './pages/Main';
+import Aluno from './pages/Aluno';
 
 const Routes = createAppContainer(createSwitchNavigator({
-    index
+    Main,
+    Aluno
 })
 );
 

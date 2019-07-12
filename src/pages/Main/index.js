@@ -2,11 +2,16 @@ import React, { Component, svg } from 'react';
 
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 
+import AsyncStorage from '@react-native-community/async-storage';
+
+import md5 from 'md5';
+
 import api from '../../services/api';
 
 import logo from '../../assets/logo.png';
 
 import styles from './styles';
+
 
 export default class main extends Component {
   state = {
@@ -15,8 +20,17 @@ export default class main extends Component {
   }
 
   handleSingIn = async () => {
-    const response = await api.get('pessoas/'+this.state.userName);
-    console.log(response.data);
+    if(this.state.userEmail){
+      const response = await api.get('pessoas/'+this.state.userEmail);
+      console.log(response.data);
+      if(md5(this.state.userPass) == response.data[0].senha){
+        this.props.navigation.navigate("Aluno");
+      }else{
+        console.log('Email ou senha estão incorretos');
+      }
+    }else{
+      console.log('Email ou senha estão incorretos');
+    }
 }; 
 
   render() {
@@ -37,6 +51,7 @@ export default class main extends Component {
           />
            <TextInput
           style={styles.input}
+          secureTextEntry={true} 
           placeholder="Senha"
           placeholderTextColor="#FFF"
           autoCapitalize="none"
