@@ -2,8 +2,6 @@ import React, { Component, svg } from 'react';
 
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 
-import AsyncStorage from '@react-native-community/async-storage';
-
 import md5 from 'md5';
 
 import api from '../../services/api';

@@ -6,6 +6,6 @@ import styles from './styles';
 
 export default class Aluno extends Component {
   render() {
-    return <View />;
+    return <View style={styles.container}></View>
   }
 }
