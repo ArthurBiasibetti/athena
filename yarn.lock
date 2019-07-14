@@ -960,6 +960,11 @@
     lodash "^4.5.0"
     prop-types "^15.6.1"
 
+AsyncStorage@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/AsyncStorage/-/AsyncStorage-0.1.5.tgz#06ddfad088dd487e703208d3c86071115549e803"
+  integrity sha1-Bt360IjdSH5wMgjTyGBxEVVJ6AM=
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

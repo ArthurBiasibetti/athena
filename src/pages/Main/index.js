@@ -1,6 +1,6 @@
 import React, { Component, svg } from 'react';
 
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity, AsyncStorage } from 'react-native';
 
 import md5 from 'md5';
 
@@ -17,11 +17,21 @@ export default class main extends Component {
     userPass: ''
   }
 
+  async componentDidMount() {
+    const pessoa = await AsyncStorage.getItem('@athena:pessoa');
+    
+    if(pessoa){
+      this.props.navigation.navigate("Aluno");
+    }
+  }
+
   handleSingIn = async () => {
     if(this.state.userEmail){
       const response = await api.get('pessoas/'+this.state.userEmail);
-      console.log(response.data);
+      
       if(md5(this.state.userPass) == response.data[0].senha){
+        await AsyncStorage.setItem('@athena:pessoa',''+response.data[0].id_pessoa);
+        
         this.props.navigation.navigate("Aluno");
       }else{
         console.log('Email ou senha estão incorretos');
