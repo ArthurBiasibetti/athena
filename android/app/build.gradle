@@ -1,10 +1,4 @@
 buildscript {
-    repositories {
-        maven { url 'https://plugins.gradle.org/m2/' } // Gradle Plugin Portal 
-    }
-    dependencies {
-        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.1, 0.99.99]'
-    }
   repositories {
     google()
     maven { url 'https://maven.fabric.io/public' }
@@ -15,7 +9,6 @@ buildscript {
     classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.1, 0.99.99]'
   }
 }
-apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 apply plugin: 'devicefarm'
@@ -30,7 +23,6 @@ def safeExtGet(prop, fallback) {
 
 android {
   compileSdkVersion safeExtGet("compileSdkVersion", 28)
-  buildToolsVersion '27.0.3'
 
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8

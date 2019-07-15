@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef255f5-3341-4167-adfc-52c4fcbabfe4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Aluno/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Aluno/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +62,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="179" y="124" width="1400" height="999" extended-state="0" />
+    <frame x="99" y="119" width="1400" height="999" extended-state="1" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32966226" />
