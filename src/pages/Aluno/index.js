@@ -49,8 +49,13 @@ export default class Aluno extends Component {
     style={styles.arquivo}
     >
       <View style={styles.fileInfo}>
+        <View style={styles.topoLista}>
+          <Text style={styles.topoTitle}>Teste</Text>
+        </View>
+        <View style={styles.textList}>
         <Text style={styles.fileTitle}>{item.nome_tarefa}</Text>
         <Text style={styles.fileTitle}>Nota: {item.peso_nota}</Text>
+        </View>
       </View>
     </TouchableOpacity>
 
